@@ -1,0 +1,16 @@
+{
+  "extends": "@telegrow/typescript-config/esm-node.json",
+  "include": ["src", "tests"],
+  "exclude": ["dist", "build", "node_modules"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./dist",
+    "paths": {
+      "axios": ["../../node_modules/.pnpm/axios@1.7.7/node_modules/axios/index.d.ts"]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+extends:
+  - '@telegrow/eslint-config/esm-node.yml'

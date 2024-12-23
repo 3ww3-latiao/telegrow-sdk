@@ -1,0 +1,41 @@
+{
+  "name": "@telegrow/sdk",
+  "version": "0.0.1",
+  "author": "Telegrow SDK Team - Latiao",
+  "type": "module",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "lint": "eslint src --fix --ext .ts"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*"
+      ]
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@telegrow/eslint-config": "workspace:*",
+    "@telegrow/typescript-config": "workspace:*",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^22.9.0",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
+  }
+}
